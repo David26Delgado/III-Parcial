@@ -22,7 +22,7 @@ Route::post('/libros/registrar', 'LibrosController@registrarBD')->name('registra
 Route::get('/libros/listado', 'LibrosController@listado')->name('listaLibros');
 
 //Rutas Estudiantes
-Route::get('/estudiantes', 'LibrosController@index')->name('indexLibros');
-Route::get('/estudiantes/registrar', 'LibrosController@registrar')->name('registrarLibros');
-Route::post('/estudiantes/registrar', 'LibrosController@registrarBD')->name('registrarBD');
-Route::get('/estudiantes/listado', 'LibrosController@listado')->name('listaLibros');
+Route::get('/estudiantes', 'EstudiantesController@index')->name('indexEstudiantes');
+Route::get('/estudiantes/registrar', 'EstudiantesController@registrar')->name('registrarEstudiantes');
+Route::post('/estudiantes/registrar', 'EstudiantesController@registrarBD')->name('registrarEBD');
+Route::get('/estudiantes/listado', 'EstudiantesController@listado')->name('listaEstudiantes');
