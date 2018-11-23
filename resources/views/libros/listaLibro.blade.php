@@ -14,6 +14,9 @@
             <li class="nav-item">
             <a class="nav-link" href="">Lista</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{{ route('buscarLibros') }}">Búsqueda</a>
+            </li>
         </ul>
     </div>
 </div>

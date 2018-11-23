@@ -38,4 +38,14 @@ class LibrosController extends Controller
 
         return view('libros.listaLibro', compact('libros'));
     }
+
+    public function buscar(){
+        return view('libros.busqueda');
+    }
+
+    public function search(Request $request){
+        $libros = Libro::Search($request->busqueda)->orderBy('id');
+        
+        return view('libros.listaLibro', compact('libros'));
+    }
 }
