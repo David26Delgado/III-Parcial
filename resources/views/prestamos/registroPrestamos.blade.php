@@ -31,7 +31,7 @@
 				  </div>
 				  <select class="custom-select" name="libro" id="libro">
 					@forelse($libros as $key)
-						<option value="{{ $key->nombre }}">{{ $key->nombre }}</option>
+						<option value="{{ $key->id }}">{{ $key->nombre }}</option>
 					@empty
 						<option value="">Ninguno</option>
 					@endforelse
@@ -44,7 +44,7 @@
 				  </div>
 				  <select class="custom-select" name="estudiante" id="estudiante">
 					@forelse($estudiantes as $key)
-						<option value="{{ $key->nombre }}">{{ $key->nombre }}</option>
+						<option value="{{ $key->id }}">{{ $key->nombre }}</option>
 					@empty
 						<option value="">Ninguno</option>
 					@endforelse
@@ -57,7 +57,7 @@
 				  </div>
 				  <select class="custom-select" name="empleado" id="empleado">
 					@forelse($empleados as $key)
-						<option value="{{ $key->nombre }}">{{ $key->nombre }}</option>
+						<option value="{{ $key->id }}">{{ $key->nombre }}</option>
 					@empty
 						<option value="">Ninguno</option>
 					@endforelse

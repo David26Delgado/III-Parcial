@@ -24,19 +24,21 @@
     <table class="table table-striped">
         <thead>
             <th>ID</th>
+            <th>Libro</th>
             <th>Estudiante</th>
             <th>Empleado</th>
             <th>Préstamo</th>
             <th>Entrega</th>
         </thead>
         <tbody>
-            @foreach($pretamos as $prestamo)
+            @foreach($prestamos as $prestamo)
                 <tr>
                     <td>{{ $prestamo->id }}</td>
-                    <td>{{ $prestamo->nombre }}</td>
-                    <td>{{ $prestamo->apellido}}</td>
-                    <td>{{ $prestamo->cedula }}</td>
-                    <td>{{ $prestamo->correo }}</td>
+                    <td>{{ $prestamo->id_libro }}</td>
+                    <td>{{ $prestamo->id_estudiante}}</td>
+                    <td>{{ $prestamo->id_empleado }}</td>
+                    <td>{{ $prestamo->prestamo }}</td>
+                    <td>{{ $prestamo->entrega }}</td>
                 </tr>
             @endforeach
         </tbody>

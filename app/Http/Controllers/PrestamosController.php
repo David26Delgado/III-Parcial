@@ -27,12 +27,13 @@ class PrestamosController extends Controller
 
     public function registrarBD(){
         $data = request()->all();
-
+        
         Prestamo::create([
-            'nombre' => $data['nombre'],
-            'apellido' => $data['apellido'],
-            'cedula' => $data['cedula'],
-            'correo' => $data['correo']
+            'id_libro' => $data['libro'],
+            'id_estudiante' => $data['estudiante'],
+            'id_empleado' => $data['empleado'],
+            'prestamo' => $data['prestamo'],
+            'entrega' => $data['entrega']
         ]);
 
         return view('prestamos.index');
@@ -42,6 +43,6 @@ class PrestamosController extends Controller
 
         $prestamos = Prestamo::all();
 
-        return view('prestamos.listaPrestamos', compact('prestamos'));
+        return view('prestamos.listadoPrestamos', compact('prestamos'));
     }
 }
