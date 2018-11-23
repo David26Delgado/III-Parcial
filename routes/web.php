@@ -26,3 +26,9 @@ Route::get('/estudiantes', 'EstudiantesController@index')->name('indexEstudiante
 Route::get('/estudiantes/registrar', 'EstudiantesController@registrar')->name('registrarEstudiantes');
 Route::post('/estudiantes/registrar', 'EstudiantesController@registrarBD')->name('registrarEBD');
 Route::get('/estudiantes/listado', 'EstudiantesController@listado')->name('listaEstudiantes');
+
+//Rutas Empleados
+Route::get('/empleados', 'EmpleadoController@index')->name('indexEmpleados');
+Route::get('/empleados/registrar', 'EmpleadoController@registrar')->name('registrarEmpleados');
+Route::post('/empleados/registrar', 'EmpleadoController@registrarBD')->name('registrarEmBD');
+Route::get('/empleados/listado', 'EmpleadoController@listado')->name('listaEmpleados');

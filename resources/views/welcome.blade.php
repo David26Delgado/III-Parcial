@@ -88,7 +88,7 @@
                     <a href=" {{ route('indexLibros') }} ">Libros</a>
                     <a href="{{ route('indexEstudiantes') }}">Estudiantes</a>
                     <a href="{{ route('indexEmpleados') }}">Empleados</a>
-                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="{{ route('indexPrestamos') }}">Prestamos</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>

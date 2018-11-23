@@ -12,7 +12,7 @@
             <a class="nav-link" href="">Registro</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="{{ route('listaEstudiantes') }}">Lista</a>
+            <a class="nav-link" href="{{ route('listaEmpleados') }}">Lista</a>
             </li>
         </ul>
     </div>
@@ -21,8 +21,8 @@
 
 @section('content')
 <div class="container">
-    	<p>Rellene el formulario para registrar un nuevo estudiante:</p>
-    	<form action="{{ route('registrarEBD') }}" method="POST">
+    	<p>Rellene el formulario para registrar un nuevo empleado:</p>
+    	<form action="{{ route('registrarEmBD') }}" method="POST">
     		{{csrf_field()}} 
     		<fieldset class="form-group">
             {{csrf_field()}}
